@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: grid;
+    background-color: rgb(52, 52, 163);
+    background-color: rgb(34, 34, 254);
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    padding-top: 10px;
+    grid-template-areas: 
+    "banana nav nav"
+    ;
+    grid-template-columns: 40%;
+}
+header p{
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    background-color: #1818646b;
+    color: white;
+    padding: 10% 10% 5% 10%;
+}
+nav{
+    display: grid;
+    grid-area: nav;
+    grid-template-areas: 
+    "wiki perfil perfil"
+    ;
+    font-size: 1em;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "nada main nada2"
+    ;
+    grid-template-columns: 13% 74% 13%;
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 80vh;
+    font-family: ;
+}
+#nada{
+    grid-area: nada;
+    background-color: rgb(98, 98, 224);
+}
+#texto{
+    grid-area: main;
+    border-left: 10px solid rgb(52, 52, 163);
+    border-right: 10px solid rgb(52, 52, 163);
+}
+#nada2{
+    background-color: rgb(98, 98, 224);
+    grid-area: nada2;
+}
+footer{
+    display: grid;
+    background-color: rgb(34, 34, 254);
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    font-size: 1.5em;
+}
+#textin{
+    float: left;
+    font-size: 1.9em;
+}
+#wiki{
+    grid-area: wiki;
+    font-size: 1em;
+    overflow: hidden;
+}
+#banana{
+    grid-area: banana;
+    justify-content: start;
+    overflow: hidden;
+}
+#perfil{
+    grid-area: perfil;
+    font-size: 1em;
+}
+@media screen and (min-width: 425px) {
+    header p{
+        font-size: 1.6em;
+    }
+    footer{
+        font-size: 1.9em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 539px) {
+    footer{
+        font-size: 2.5em;
+    }
+    header p{
+        font-size: 2.1em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:645px){
+   header p{
+    font-size: 2.5em;
+   } 
+   footer{
+    font-size: 3em;
+   }
+   a{
+    font-size: 1em;
+}
+}
+@media screen and (min-width:768px){
+    header p{
+        font-size: 2.6em;
+    }
+    footer{
+        font-size: 3.0em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px){
+    header p{
+        font-size: 3em;
+    }
+    footer{
+        font-size: 3.5em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1440px){
+    header p{
+        font-size: 3.5em;
+    }
+    footer{
+        font-size: 4em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:2560px){
+    header p{
+        font-size: 5em;
+    }
+    footer{
+        font-size: 5.5em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
