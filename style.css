@@ -168,3 +168,14 @@ footer{
         font-size: 1em;
     }
 }
+@media print{
+    header{
+        color: black;
+    }
+    footer{
+        color: black;
+    }
+    a{
+        color: black;
+    }
+}
